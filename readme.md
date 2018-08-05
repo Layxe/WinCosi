@@ -51,8 +51,11 @@ Wie Sie vielleicht schon mitbekommen haben gibt es verschiedene Adressierungsmet
 Benötigt wird [NodeJS](https://nodejs.org/en/) sowie NPM. Ebenso natürlich Git ;)
 
 > $ git clone https://github.com/Layxe/WinCosi
+
 > $ cd WinCosi
+
 > $ npm install
+
 > $ npm start
 
 Natürlich lässt sich das Ganze auch mit einem beliebigen Electron Packager in eine
