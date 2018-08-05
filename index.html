@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cosi Assembler</title>
+
+    <!-- CSS Imports -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+  </head>
+  <body>
+
+    <div id="active-row"></div>
+    <div id="input-field"></div>
+    <div id="output-field"></div>
+    <div id="cosi-status">
+      <div><span>BZ: </span><span id="bz">0</span></div>
+      <div><span>AKKU: </span><span id="akku">-</span></div>
+      <div><span>BR: </span><span id="br">-</span></div><br>
+      <div><span id="counter">&nbsp; Schritt: 0</span></div><br>
+      <div><span>STACK: </span><br>
+        <div id="stack">
+        </div>
+      </div>
+    </div>
+    <div id="cursor"></div>
+    <div id="controls">
+      <button onclick="emulateCode()">Start</button>
+      <button onclick="emulator.nextStep()">Nächster Schritt</button>
+      <input type="checkbox" id="stepper"> <span>Stepper aktivieren</span>
+    </div>
+      <script src="./js/renderer.js"></script>
+    <script src="./js/emulator.js"></script>
+    <script src="./js/compiler.js"></script>
+  </body>
+</html>

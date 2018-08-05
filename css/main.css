@@ -1,0 +1,136 @@
+/*=============================================================================
+  Author: Alexander Niedermayer
+  Date:   06.03.2017
+  Description: Main stylesheet for a cosi assembler application
+===============================================================================*/
+
+html, body {
+  margin: 0;
+  background-color: #262626;
+  height: 99%;
+  font-family: monospace, Arial, sans-serif;
+}
+
+/* --- Editor styling --- */
+
+#input-field {
+  width: 30%;
+  background-color: #282c32;
+  height: 90%;
+  margin: 10px;
+  overflow: scroll;
+  cursor: text;
+  float: left;
+}
+
+#input-field > .line {
+  width: 95%;
+  height: 25px;
+  font-size: 20px;
+  color: white;
+  white-space: nowrap;
+}
+
+#input-field > .line > .number {
+  height: 20px;
+  width: 40px;
+  padding: 2px 5px 3px 5px; /* top right bottom left */
+  margin-right: 25px;
+  border-right: 1px solid white;
+  cursor: default;
+  float: left;
+}
+
+#input-field > .line:last-child {
+  float: left;
+  height: 25px;
+  padding-right: 5%;
+}
+
+#active-row {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0;
+}
+
+#cursor {
+  position: absolute;
+  width: 2px;
+  height: 25px;
+  top: 10px;
+  left: 50px;
+  background-color: white;
+}
+
+button {
+  margin-left: 10px;
+}
+
+/* --- Output --- */
+
+#output-field {
+  width: 30%;
+  height: 90%;
+  margin: 10px;
+  background-color: #282c32;
+  float: left;
+  margin: 10px;
+  overflow-y: scroll;
+}
+
+#output-field > .line {
+  height: 25px;
+  color: white;
+}
+
+#output-field > .line > div {
+  float: left;
+  width: 40px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+/* --- Cosi Status --- */
+
+#cosi-status {
+  color: white;
+}
+
+/* --- Controls --- */
+
+#controls {
+  width: 100%;
+  float: left;
+}
+
+#controls > span {
+  color: white;
+}
+
+/* --- Scrollbar --- */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #282c32;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #222222;
+}
+
+/* --- Syntax Highlight --- */
+
+.main-symbol {
+  color: orange;
+}
+
+.syntax-number {
+  color: cornflowerblue;
+}
+
+.syntax-mode {
+  color: forestgreen;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "CosiAssembler",
+  "version": "1.0.0",
+  "description": "A simple emulator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com",
+  "keywords": [
+    "Cosi",
+    "Assembler",
+    "Emulator"
+  ],
+  "author": "Alexander Niedermayer",
+  "license": "Public commons",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  }
+}
